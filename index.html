@@ -5,54 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles.css">
     <title>Profile Card Component</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- <img src="./images/bg-pattern-top.svg" alt="white transparent circle" class="image-top"> -->
+    <!-- <img src="./images/bg-pattern-bottom.svg" alt="white transparent circle" class="image-bottom"> -->
 
     <!-- Start of card div -->
     <div class="card">
         <div class="card__bg"></div>
 
         <div class="card__person">
-            <div class="card__person-image">
-                <img src="./images/image-victor.jpg" alt="An image of a man">
-            </div>
+            <img src="./images/image-victor.jpg" alt="An image of a man" class="card__image">
 
             <div class="card__person-info">
-                Victor Crest
+                <span class="card__person-name">Victor Crest</span>
                 26
             </div>
 
-            <div class="card__person-location">
+            <div>
                 London
             </div>
         </div>
 
         <div class="card__stat">
-            <div class="card__stat-item">
-                80K
-                Followers
+            <div class="card__item">
+                <span class="card__number">80K</span> <br>
+                <span class="card__label">Followers</span>
             </div>
 
-            <div class="card__stat-item">
-                803K
-                Likes
+            <div class="card__item">
+                <span class="card__number">803K</span> <br>
+                <span class="card__label">Likes</span>
             </div>
 
-            <div class="card__stat-item">
-                1.4K
-                Photos
+            <div class="card__item">
+                <span class="card__number">1.4K</span> <br>
+                <span class="card__label">Photos</span>
             </div>
         </div>
     </div>
     <!-- End of card div  -->
 
-    <div class="attribution">
+    <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 </body>
 
 </html>
