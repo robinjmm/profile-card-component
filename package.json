@@ -1,0 +1,29 @@
+{
+  "name": "profile-card-component",
+  "version": "1.0.0",
+  "description": "My solution for the challenge of building a profile card component from Frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --watch",
+    "sass": "sass --watch scss/styles.scss:css/styles.css",
+    "dev": "concurrently \"npm run sass\" \"npm run serve\"",
+    "prod": "sass scss/styles.scss:css/styles.css && postcss css/styles.css -o css/styles.css",
+    "preview": "concurrently \"npm run prod\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinjmm/profile-card-component.git"
+  },
+  "author": "robinjmm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinjmm/profile-card-component/issues"
+  },
+  "homepage": "https://github.com/robinjmm/profile-card-component#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
