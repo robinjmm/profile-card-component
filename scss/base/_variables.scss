@@ -1,0 +1,25 @@
+:root {
+    // Colors
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --border-color: rgba(150, 150, 150, 0.3);
+
+    --bg-main: hsl(185, 75%, 39%);
+
+    // Fonts
+    --ff-primary: "Kumbh Sans", sans-serif;
+}
+
+// Functions
+@function toRem($value) {
+    $remValue: calc(($value / 16px) * 1rem);
+    @return $remValue;
+}
+
+// $value is the desired font size
+// $base is the font size of the parent element
+@function toEm($value, $base) {
+    $emValue: calc(($value / $base) * 1em);
+    @return $emValue;
+}
