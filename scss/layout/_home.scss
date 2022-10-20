@@ -9,6 +9,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: var(--ff-primary);
     overflow-y: hidden;
+}
+
+footer {
+  margin-top: toRem(60px);
 }
