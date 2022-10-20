@@ -5,7 +5,10 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--bg-main);
+    background-color: var(--bg-main);
+    background-image: url("../assets/images/bg-pattern-top.svg"), url("../assets/images/bg-pattern-bottom.svg");
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
